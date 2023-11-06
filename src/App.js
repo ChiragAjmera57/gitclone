@@ -1,22 +1,11 @@
-import "./App.css";
-import { Hero } from "./component/Hero";
-import { Navbar } from "./component/Navbar";
+import React from "react";
+import { createStyle } from "tailwind-to-css";
 
-function App() {
-  return (
-    <div>
-      <div className="navcontainer1">
-        <div className="navcontainer2">
-          <Navbar />
-        </div>
-      </div>
-      <div>
-        <div>
-          <Hero />
-        </div>
-      </div>
-    </div>
-  );
-}
+export const App = () => {
+  
 
-export default App;
+  return <div class="text-center font-bold text-xl text-blue-500">
+  This is a centered, bold, blue text.
+</div>
+;
+};
